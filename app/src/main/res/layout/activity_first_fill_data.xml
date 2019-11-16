@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="First Name"
+            android:id="@+id/firstName"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:id="@+id/lastName"
+            android:layout_marginTop="15dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Birthday"
+            android:id="@+id/bithday"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:id="@+id/phoneNumber"
+            android:layout_marginTop="20dp"
+            android:inputType="number" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/gender"
+            android:background="@drawable/field_style"
+            android:hint="Gender"
+            android:id="@+id/gender"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_width"
+            android:text="Your Email is not Verified"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_report_problem_black_24dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Start chanaling"
+            android:id="@+id/addDetails"
+            android:background="@drawable/button_style"
+            android:textColor="@color/white"
+            />
+
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="@color/colorbtn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar3"
+        />
+
+</RelativeLayout>

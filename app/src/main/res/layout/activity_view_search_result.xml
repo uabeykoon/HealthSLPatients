@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewSearchResult"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/doctorNameViewChannal"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/search_home_style"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/startTime"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:text="sss"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="- To -"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/endTime"
+                        android:gravity="center"
+                        android:textSize="16dp"/>
+
+
+                </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Pick a Date"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:id="@+id/addChanelDate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/field_style"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/channalNumber"
+                android:gravity="center"
+                android:text="Wait For Channel Number"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Make channal"
+
+                android:textColor="@color/white"
+                android:background="@drawable/button_style"
+                android:id="@+id/addChanal">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

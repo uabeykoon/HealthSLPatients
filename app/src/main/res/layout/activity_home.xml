@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:id="@+id/chanelDate"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/specification"
+            android:layout_marginTop="25dp"
+            android:id="@+id/specifiction">
+
+        </Spinner>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/doctorNameSpinner">
+
+        </Spinner>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchBtn"/>
+
+    </LinearLayout>
+
+
+
+    <!--<android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>-->
+
+
+</LinearLayout>

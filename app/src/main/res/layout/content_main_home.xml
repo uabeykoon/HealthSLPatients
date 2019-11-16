@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@drawable/search_home_style">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick a Date"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="17dp"
+            />
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Date"
+            android:padding="10dp"
+            android:id="@+id/chanelDate"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchBtnDate"
+            android:textColor="@color/white"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@drawable/search_home_style"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick a Specification"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="17dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/specification"
+            android:layout_marginTop="10dp"
+            android:id="@+id/specifiction"
+            >
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchBtnSpec"
+            android:textColor="@color/white"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@drawable/search_home_style"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a Doctor"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="17dp"
+            />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/doctorNameSpinner">
+
+        </Spinner>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchBtn"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_style"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="@color/colorbtn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar2"
+        />
+
+
+
+    <!--<android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>-->
+
+
+</RelativeLayout>

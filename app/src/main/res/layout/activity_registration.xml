@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_health_sl"
+            android:layout_marginBottom="25dp"/>
+
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="First Name"
+            android:id="@+id/firstName"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+
+            android:hint="Last Name"
+            android:id="@+id/lastName"
+            android:layout_marginTop="15dp"/>-->
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+
+            android:layout_marginTop="15dp"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/field_style"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:id="@+id/passwordConfirm"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"/>
+
+        <!--
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:id="@+id/firstName"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:id="@+id/lastName"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday"
+            android:id="@+id/bithday"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:id="@+id/phoneNumber"
+            android:layout_marginTop="20dp"
+            android:inputType="number"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/confirmPassword"
+            android:layout_marginTop="15dp"/>
+
+        -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Register"
+            android:id="@+id/registerbtn"
+            android:background="@drawable/button_style"
+            android:textColor="@color/white"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User of HealthSL,Sign in Here"
+            android:id="@+id/registertoSignin"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginTop"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="@color/colorbtn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar4"
+        />
+
+</RelativeLayout>
